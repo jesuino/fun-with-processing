@@ -8,7 +8,7 @@ void setup() {
 }
 
 void draw() {
-  background(255);
+  background(180);
   for (int i = 0; i< t.length; i++) {
     t[i].update();
     t[i].display();
