@@ -15,9 +15,9 @@ class Ball {
     if(dying && size > 0) {
        size--;
        op = map(size, 0, S, 0, 255);
+    } else {
+      location.add(velocity);
     }
-    
-    location.add(velocity);
     if (location.x > width) location.x = 0;
     if (location.x < 0) location.x = width;
     if (location.y > height) location.y = 0;

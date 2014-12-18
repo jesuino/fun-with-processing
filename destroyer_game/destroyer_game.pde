@@ -40,6 +40,7 @@ void showRunning() {
       if (b == selected) {
         score++;
         selected = null;
+        background(255);
       }
       b.kill();
       d.velocity = new PVector(random(-1, 1), random(-1, 1));
